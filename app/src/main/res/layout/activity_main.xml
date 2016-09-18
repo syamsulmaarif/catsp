@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.syamms.firstgame.MainActivity"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hight Scores!"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:id="@+id/textHighScore"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:id="@+id/buttonPlay"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:theme="@style/MyButton"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ship"
+        android:id="@+id/imageView"
+        android:layout_above="@+id/imageView3"
+        android:layout_alignRight="@+id/textHighScore"
+        android:layout_alignEnd="@+id/textHighScore" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/enemy2"
+        android:id="@+id/imageView2"
+        android:layout_above="@+id/imageView3"
+        android:layout_toRightOf="@+id/buttonPlay"
+        android:layout_toEndOf="@+id/buttonPlay" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/enemy"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_below="@+id/buttonPlay"
+        android:id="@+id/imageView3" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/enemy2"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_marginLeft="67dp"
+        android:layout_marginStart="67dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="HELP !!!"
+        android:textSize="70dp"
+        android:textColor="@android:color/white"
+        android:layout_above="@+id/textView"
+        android:layout_toLeftOf="@+id/buttonPlay"
+        android:layout_toStartOf="@+id/buttonPlay" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Cat wants to return to Earth"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:layout_above="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView" />
+</RelativeLayout>
