@@ -1,5 +1,5 @@
 package com.syamms.firstgame;
-
+//hello git
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.graphics.Canvas;
